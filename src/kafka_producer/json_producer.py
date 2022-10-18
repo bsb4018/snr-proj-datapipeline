@@ -21,7 +21,7 @@
 import argparse
 from uuid import uuid4
 from src.kafka_config import sasl_conf, schema_config
-from six import input
+#from six.moves import input
 from src.kafka_logger import logging
 from confluent_kafka import Producer
 from confluent_kafka.serialization import StringSerializer, SerializationContext, MessageField
@@ -31,8 +31,7 @@ import pandas as pd
 from typing import List
 from src.entity.generic import Generic, instance_to_dict
 
-FILE_PATH = "/home/avnish/iNeuron_Private_Intelligence_Limited/industry_ready_project/projects/data_pipeline/kafka-sensor/sample_data/sensor/aps_failure_training_set1.csv"
-
+FILE_PATH = "D:/work/2.industry_iN/project_1/data_pipeline/projx1_data_pipeline/sample_data/kafka-sensor-topic/aps_failure_training_set1.csv"
 
 def car_to_dict(car: Generic, ctx):
     """
