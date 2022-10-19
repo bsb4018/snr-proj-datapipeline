@@ -18,7 +18,7 @@ def sasl_conf():
 
     sasl_conf = {'sasl.mechanism': SSL_MACHENISM,
                  # Set to SASL_SSL to enable TLS support.
-                #  'security.protocol': 'SASL_PLAINTEXT'}
+                #  'security.protocol': 'SASL_PLAINTEXT'
                 'bootstrap.servers':BOOTSTRAP_SERVER,
                 'security.protocol': SECURITY_PROTOCOL,
                 'sasl.username': API_KEY,
